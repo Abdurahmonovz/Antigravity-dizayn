@@ -1,0 +1,78 @@
+:root {
+  --min-bg: #ffffff;
+  --min-text: #111111;
+  --min-accent: #000000;
+  --min-gray: #888888;
+}
+
+.minimalism-page {
+  min-height: 100vh;
+  background: var(--min-bg);
+  color: var(--min-text);
+  font-family: var(--font-sans);
+  padding-top: 120px;
+}
+
+.minimalism-page .style-nav {
+  background: var(--min-bg);
+  border-bottom: 1px solid #eeeeee;
+}
+
+.min-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.min-hero {
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+}
+
+.min-hero h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.min-hero p {
+  font-size: 1.5rem;
+  color: var(--min-gray);
+  max-width: 500px;
+  font-weight: 300;
+}
+
+.min-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem 2rem;
+  border-top: 1px solid #eeeeee;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.min-item {
+  position: relative;
+}
+
+.min-number {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--min-gray);
+  margin-bottom: 1rem;
+}
+
+.min-item h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.min-item p {
+  color: var(--min-gray);
+  line-height: 1.6;
+  font-weight: 300;
+}

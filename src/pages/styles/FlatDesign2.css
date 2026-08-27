@@ -1,0 +1,129 @@
+:root {
+  --flat-bg: #ecf0f1;
+  --flat-text: #2c3e50;
+  --flat-green: #2ecc71;
+  --flat-blue: #3498db;
+  --flat-red: #e74c3c;
+  --flat-purple: #9b59b6;
+  --flat-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flat-page {
+  min-height: 100vh;
+  background-color: var(--flat-bg);
+  color: var(--flat-text);
+  font-family: var(--font-sans);
+  padding-top: 80px;
+}
+
+.flat-page .style-nav {
+  background: var(--flat-bg);
+  border-bottom: 2px solid #bdc3c7;
+}
+
+.flat-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.flat-hero {
+  background: #ffffff;
+  padding: 4rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--flat-shadow);
+  margin-bottom: 4rem;
+}
+
+.flat-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.flat-circle {
+  width: 80px;
+  height: 80px;
+  background: var(--flat-purple);
+  border-radius: 50%;
+}
+
+.flat-square {
+  width: 80px;
+  height: 80px;
+  background: var(--flat-green);
+}
+
+.flat-triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid var(--flat-red);
+}
+
+.flat-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.flat-hero p {
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.flat-btn {
+  background: var(--flat-blue);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.25rem 3rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #2980b9;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.flat-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #2980b9;
+}
+
+.flat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.flat-card {
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  box-shadow: var(--flat-shadow);
+  transition: transform 0.2s;
+}
+
+.flat-card:hover {
+  transform: translateY(-5px);
+}
+
+.flat-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.flat-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.flat-card-green { background-color: var(--flat-green); }
+.flat-card-blue { background-color: var(--flat-blue); }
+.flat-card-red { background-color: var(--flat-red); }

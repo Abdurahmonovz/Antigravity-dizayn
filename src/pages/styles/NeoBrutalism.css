@@ -1,0 +1,121 @@
+:root {
+  --nb-bg: #fdf5e6;
+  --nb-text: #000000;
+  --nb-border: 4px solid #000;
+  --nb-shadow: 8px 8px 0px #000;
+  --nb-shadow-hover: 12px 12px 0px #000;
+  --nb-yellow: #ffde59;
+  --nb-pink: #ff914d;
+  --nb-blue: #38b6ff;
+}
+
+.neo-brutalism-page {
+  background-color: var(--nb-bg);
+  min-height: 100vh;
+  color: var(--nb-text);
+  font-family: var(--font-mono);
+  padding-top: 80px; /* Space for nav */
+}
+
+/* Nav override for this specific style */
+.neo-brutalism-page .style-nav {
+  background: var(--nb-bg);
+  border-bottom: var(--nb-border);
+  backdrop-filter: none;
+}
+
+.nb-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.nb-hero {
+  border: var(--nb-border);
+  background: #fff;
+  padding: 4rem 2rem;
+  box-shadow: var(--nb-shadow);
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.nb-badge {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  background: var(--nb-yellow);
+  border: var(--nb-border);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transform: rotate(5deg);
+}
+
+.nb-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.nb-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.nb-button {
+  background: var(--nb-blue);
+  color: #000;
+  border: var(--nb-border);
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.nb-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: var(--nb-shadow);
+}
+
+.nb-button:active {
+  transform: translate(0, 0);
+  box-shadow: 0 0 0 #000;
+}
+
+.nb-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.nb-card {
+  border: var(--nb-border);
+  padding: 2rem;
+  box-shadow: var(--nb-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nb-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: var(--nb-shadow-hover);
+}
+
+.bg-yellow { background: var(--nb-yellow); }
+.bg-pink { background: var(--nb-pink); }
+.bg-blue { background: var(--nb-blue); }
+
+.nb-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.nb-footer {
+  border-top: var(--nb-border);
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+}

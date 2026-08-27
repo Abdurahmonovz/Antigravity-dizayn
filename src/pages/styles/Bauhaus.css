@@ -1,0 +1,12 @@
+:root { --bh-red: #e71d36; --bh-blue: #011627; --bh-yellow: #ff9f1c; --bh-bg: #fdfffc; }
+.bauhaus-page { min-height: 100vh; padding-top: 100px; background: var(--bh-bg); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.bauhaus-page .style-nav { background: #fff; border-bottom: 5px solid var(--bh-red); }
+.bh-main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.bh-hero { position: relative; height: 70vh; display: flex; align-items: center; justify-content: center; }
+.bh-shape { position: absolute; z-index: 1; opacity: 0.9; mix-blend-mode: multiply; }
+.bh-circle { width: 400px; height: 400px; background: var(--bh-red); border-radius: 50%; left: 10%; top: 10%; }
+.bh-square { width: 350px; height: 350px; background: var(--bh-blue); right: 15%; top: 20%; }
+.bh-triangle { width: 0; height: 0; border-left: 200px solid transparent; border-right: 200px solid transparent; border-bottom: 346px solid var(--bh-yellow); left: 35%; bottom: 10%; }
+.bh-hero-content { position: relative; z-index: 2; text-align: center; }
+.bh-hero-content h1 { font-size: 8rem; font-weight: 800; letter-spacing: -2px; margin: 0; color: #000; mix-blend-mode: overlay; text-shadow: 2px 2px 0 #fff; }
+.bh-hero-content p { font-size: 2rem; font-weight: bold; margin-top: 1rem; }

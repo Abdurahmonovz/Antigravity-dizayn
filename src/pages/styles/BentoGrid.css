@@ -1,0 +1,14 @@
+:root { --bg-bg: #f3f4f6; }
+.bento-page { min-height: 100vh; padding-top: 100px; background: var(--bg-bg); font-family: 'Inter', sans-serif; }
+.bento-page .style-nav { background: #fff; border-bottom: 1px solid #e5e7eb; }
+.bento-main { max-width: 900px; margin: 0 auto; padding: 2rem; }
+.bento-grid-container { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 1.5rem; }
+.bento-item { background: #fff; border-radius: 24px; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center; }
+.hero-item { grid-column: span 2; grid-row: span 2; background: #3b82f6; color: white; }
+.hero-item h1 { font-size: 3rem; margin-bottom: 1rem; }
+.image-item { grid-column: span 2; background: #fca5a5; }
+.stat-item { background: #34d399; color: white; align-items: center; }
+.stat-item h2 { font-size: 3rem; }
+.wide-item { grid-column: span 2; background: #a78bfa; color: white; }
+.square-item { align-items: center; font-size: 2rem; font-weight: bold; background: #fbcfe8; }
+@media (max-width: 768px) { .bento-grid-container { grid-template-columns: 1fr; } .hero-item, .image-item, .wide-item { grid-column: span 1; } }

@@ -1,0 +1,17 @@
+:root { --mem-bg: #ffeb3b; --mem-pink: #ff4081; --mem-cyan: #00e5ff; --mem-purple: #e040fb; }
+.memphis-page { min-height: 100vh; padding-top: 100px; background: var(--mem-bg); background-image: radial-gradient(#000 20%, transparent 21%); background-size: 20px 20px; font-family: 'Comic Sans MS', cursive, sans-serif; position: relative; overflow: hidden; }
+.memphis-page .style-nav { background: #fff; border-bottom: 4px solid #000; }
+.memphis-main { max-width: 1000px; margin: 0 auto; padding: 2rem; position: relative; z-index: 1; }
+.memphis-hero { background: var(--mem-pink); border: 5px solid #000; box-shadow: 12px 12px 0 #000; padding: 4rem; text-align: center; color: white; margin-bottom: 4rem; transform: rotate(-2deg); }
+.memphis-hero h1 { font-size: 4rem; text-transform: uppercase; text-shadow: 4px 4px 0 var(--mem-cyan); }
+.memphis-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; }
+.memphis-card { background: #fff; border: 4px solid #000; box-shadow: 8px 8px 0 #000; padding: 2rem; text-align: center; }
+.memphis-card:nth-child(2) { background: var(--mem-cyan); transform: translateY(20px); }
+.memphis-card:nth-child(3) { background: var(--mem-purple); color: white; }
+.memphis-icon { width: 60px; height: 60px; margin: 0 auto 1rem; border: 4px solid #000; }
+.memphis-icon.circle { border-radius: 50%; background: var(--mem-pink); }
+.memphis-icon.square { background: var(--mem-bg); }
+.memphis-icon.triangle { width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 50px solid var(--mem-cyan); background: transparent; }
+.memphis-shape { position: absolute; border: 4px solid #000; z-index: 0; }
+.shape-1 { width: 100px; height: 100px; border-radius: 50%; background: var(--mem-purple); top: 10%; right: 10%; }
+.shape-2 { width: 80px; height: 80px; background: var(--mem-cyan); bottom: 20%; left: 5%; transform: rotate(45deg); }

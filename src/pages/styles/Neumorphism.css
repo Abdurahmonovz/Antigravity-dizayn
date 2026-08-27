@@ -1,0 +1,110 @@
+:root {
+  --neu-bg: #e0e5ec;
+  --neu-text: #4a5568;
+  --neu-light-shadow: #ffffff;
+  --neu-dark-shadow: #a3b1c6;
+}
+
+.neumorphism-page {
+  min-height: 100vh;
+  padding-top: 100px;
+  background-color: var(--neu-bg);
+  color: var(--neu-text);
+  font-family: var(--font-sans);
+}
+
+.neumorphism-page .style-nav {
+  background: var(--neu-bg);
+  box-shadow: 0 4px 6px rgba(163, 177, 198, 0.2);
+  border: none;
+}
+
+.neu-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.neu-element {
+  background: var(--neu-bg);
+  border-radius: 20px;
+  box-shadow: 9px 9px 16px var(--neu-dark-shadow),
+             -9px -9px 16px var(--neu-light-shadow);
+}
+
+.neu-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 4rem 2rem;
+}
+
+.neu-hero h1 {
+  font-size: 3rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.neu-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.neu-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.neu-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--neu-text);
+  transition: all 0.2s ease;
+}
+
+.neu-flat {
+  box-shadow: 6px 6px 10px var(--neu-dark-shadow),
+             -6px -6px 10px var(--neu-light-shadow);
+}
+
+.neu-flat:active {
+  box-shadow: inset 6px 6px 10px var(--neu-dark-shadow),
+             inset -6px -6px 10px var(--neu-light-shadow);
+}
+
+.neu-pressed {
+  box-shadow: inset 6px 6px 10px var(--neu-dark-shadow),
+             inset -6px -6px 10px var(--neu-light-shadow);
+  color: #3b82f6;
+}
+
+.neu-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.neu-card {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.neu-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.neu-card h2 {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}

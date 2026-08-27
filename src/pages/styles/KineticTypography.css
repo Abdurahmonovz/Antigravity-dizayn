@@ -1,0 +1,10 @@
+:root { --kt-bg: #000; --kt-text: #fff; }
+.kt-page { min-height: 100vh; padding-top: 100px; background: var(--kt-bg); font-family: 'Inter', sans-serif; overflow: hidden; }
+.kt-page .style-nav { background: #111; border-bottom: 1px solid #333; color: #fff; }
+.kt-page .style-nav .nav-back, .kt-page .style-nav .badge-desc { color: #888; }
+.kt-main { margin-top: 10vh; }
+.marquee { width: 100vw; overflow: hidden; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 1rem 0; margin-bottom: 2rem; background: #0a0a0a; }
+.marquee-inner { display: flex; width: max-content; animation: marquee 10s linear infinite; }
+.marquee.reverse .marquee-inner { animation-direction: reverse; background: #fff; color: #000; }
+.marquee span { font-size: 5rem; font-weight: 900; white-space: nowrap; padding-right: 2rem; letter-spacing: -2px; }
+@keyframes marquee { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-50%, 0, 0); } }

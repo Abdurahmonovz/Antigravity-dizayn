@@ -1,0 +1,10 @@
+:root { --deco-bg: #0a0a0a; --deco-gold: #c5a059; }
+.art-deco-page { min-height: 100vh; padding: 120px 2rem 2rem; background: var(--deco-bg); color: var(--deco-gold); font-family: 'Playfair Display', serif; }
+.art-deco-page .style-nav { background: #000; border-bottom: 1px solid var(--deco-gold); color: var(--deco-gold); }
+.deco-main { max-width: 800px; margin: 0 auto; height: 70vh; }
+.deco-border { border: 2px solid var(--deco-gold); height: 100%; display: flex; align-items: center; justify-content: center; position: relative; padding: 20px; }
+.deco-border::before, .deco-border::after { content: ''; position: absolute; width: calc(100% - 20px); height: calc(100% - 20px); border: 1px solid var(--deco-gold); }
+.deco-border::before { top: 10px; left: 10px; }
+.deco-hero { text-align: center; z-index: 1; }
+.deco-hero h1 { font-size: 5rem; font-weight: 400; text-transform: uppercase; letter-spacing: 10px; border-bottom: 2px solid var(--deco-gold); border-top: 2px solid var(--deco-gold); padding: 1rem 0; margin-bottom: 2rem; }
+.deco-hero p { font-family: 'Inter', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; }

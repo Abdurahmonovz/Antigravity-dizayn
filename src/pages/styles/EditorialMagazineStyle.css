@@ -1,0 +1,12 @@
+:root { --ed-bg: #f8f8f8; --ed-text: #1a1a1a; }
+.editorial-page { min-height: 100vh; padding-top: 100px; background: var(--ed-bg); color: var(--ed-text); font-family: 'Playfair Display', serif; }
+.editorial-page .style-nav { background: #fff; border-bottom: 1px solid #ddd; }
+.ed-main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.ed-header { text-align: center; border-bottom: 4px solid #000; border-top: 1px solid #000; padding: 3rem 0 1rem; margin-bottom: 3rem; }
+.ed-header h1 { font-size: 6rem; font-weight: 700; letter-spacing: -2px; margin: 0; line-height: 1; }
+.ed-meta { font-family: 'Inter', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 3px; margin-top: 1rem; color: #666; }
+.ed-content { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; }
+.ed-col h2 { font-size: 3rem; font-weight: 400; line-height: 1.1; margin-bottom: 1.5rem; }
+.ed-col h3 { font-size: 1.5rem; border-top: 2px solid #000; padding-top: 1rem; margin-bottom: 1rem; }
+.ed-col p { font-family: 'Inter', sans-serif; line-height: 1.6; color: #444; }
+.ed-dropcap::first-letter { float: left; font-size: 4rem; font-family: 'Playfair Display', serif; line-height: 0.8; padding-right: 0.5rem; font-weight: bold; }

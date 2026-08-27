@@ -1,0 +1,65 @@
+.style-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.style-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.card-preview {
+  height: 160px;
+  background: #f1f5f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 1.5rem;
+}
+
+.card-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-display);
+}
+
+.card-info p {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Base styles for individual preview classes */
+.preview-neo-brutalism .card-preview { background: #ffe4e6; border-bottom: 3px solid #000; }
+.preview-glassmorphism .card-preview { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); }
+.preview-neumorphism .card-preview { background: #e0e5ec; box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff; }
+.preview-claymorphism .card-preview { background: #f4f6fc; box-shadow: inset 0px -10px 20px rgba(182,194,226,0.3); }
+.preview-minimalism .card-preview { background: #ffffff; border-bottom: 1px solid #000; }
+
+.preview-material-design .card-preview { background: #6200ea; box-shadow: inset 0px -15px 15px -15px rgba(0,0,0,0.5); }
+.preview-flat-design .card-preview { background: #2ecc71; }
+.preview-dark-mode-luxury .card-preview { background: #141414; border-bottom: 2px solid #d4af37; }
+.preview-memphis .card-preview { background: #ffeb3b; background-image: radial-gradient(#000 15%, transparent 16%); background-size: 15px 15px; }
+.preview-vaporwave .card-preview { background: linear-gradient(180deg, #ff71ce, #01cdfe); }
+
+.preview-cyberpunk .card-preview { background: #000000; border-bottom: 4px solid #fcee0a; box-shadow: inset 0 0 20px #01cdfe; }
+.preview-bauhaus .card-preview { background: #ff0000; border-left: 30px solid #0000ff; border-right: 30px solid #ffff00; }
+.preview-art-deco .card-preview { background: #000000; border: 2px solid #d4af37; }
+.preview-skeuomorphism .card-preview { background: linear-gradient(45deg, #8b4513, #a0522d); border-bottom: 4px solid #5c3010; }
+.preview-bento-grid .card-preview { background: #f3f4f6; background-image: linear-gradient(#e5e7eb 2px, transparent 2px), linear-gradient(90deg, #e5e7eb 2px, transparent 2px); background-size: 20px 20px; }
+
+.preview-aurora .card-preview { background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); }
+.preview-retro-futurism .card-preview { background: #ff9a9e; }
+.preview-editorial .card-preview { background: #ffffff; border-left: 10px solid #000; }
+.preview-corporate-memphis .card-preview { background: #6c5ce7; }
+.preview-kinetic .card-preview { background: #111; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; }

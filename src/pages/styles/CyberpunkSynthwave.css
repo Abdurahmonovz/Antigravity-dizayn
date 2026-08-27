@@ -1,0 +1,10 @@
+:root { --cp-bg: #0d0e15; --cp-yellow: #fcee0a; --cp-cyan: #00f0ff; --cp-pink: #ff003c; }
+.cp-page { min-height: 100vh; padding-top: 100px; background: var(--cp-bg); color: var(--cp-yellow); font-family: 'Space Mono', monospace; text-transform: uppercase; }
+.cp-page .style-nav { background: #000; border-bottom: 2px solid var(--cp-cyan); color: var(--cp-cyan); }
+.cp-main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.cp-hero { background: rgba(252, 238, 10, 0.1); border: 1px solid var(--cp-yellow); box-shadow: 0 0 15px rgba(252, 238, 10, 0.5); padding: 4rem; text-align: center; margin-bottom: 3rem; clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 0 100%); }
+.cp-hero h1 { font-size: 5rem; text-shadow: 0 0 10px var(--cp-yellow); margin-bottom: 1rem; color: var(--cp-bg); background: var(--cp-yellow); display: inline-block; padding: 0 1rem; }
+.cp-btn { background: var(--cp-pink); color: #fff; border: none; padding: 1rem 3rem; font-size: 1.2rem; font-weight: bold; cursor: pointer; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); transition: all 0.2s; margin-top: 2rem; }
+.cp-btn:hover { background: var(--cp-cyan); color: #000; box-shadow: 0 0 20px var(--cp-cyan); }
+.cp-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.cp-card { border-left: 4px solid var(--cp-cyan); background: rgba(0, 240, 255, 0.05); padding: 2rem; color: var(--cp-cyan); box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.1); }

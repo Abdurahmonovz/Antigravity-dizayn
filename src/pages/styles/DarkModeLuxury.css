@@ -1,0 +1,131 @@
+:root {
+  --lux-bg: #0a0a0a;
+  --lux-surface: #141414;
+  --lux-text: #ffffff;
+  --lux-gold: linear-gradient(135deg, #d4af37 0%, #aa771c 100%);
+  --lux-gold-text: #d4af37;
+}
+
+.dark-luxury-page {
+  min-height: 100vh;
+  background-color: var(--lux-bg);
+  color: var(--lux-text);
+  font-family: var(--font-serif);
+  padding-top: 100px;
+}
+
+.dark-luxury-page .style-nav {
+  background: rgba(10, 10, 10, 0.8);
+  border-bottom: 1px solid #222;
+  color: #fff;
+}
+
+.dark-luxury-page .style-nav .nav-back, 
+.dark-luxury-page .style-nav .badge-desc {
+  color: #888;
+}
+
+.luxury-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.luxury-hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0,0,0,0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.luxury-hero h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  background: var(--lux-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-hero p {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  position: relative;
+  z-index: 1;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.luxury-btn {
+  background: transparent;
+  color: var(--lux-gold-text);
+  border: 1px solid var(--lux-gold-text);
+  padding: 1rem 3rem;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.luxury-btn:hover {
+  background: var(--lux-gold);
+  color: #000;
+  border-color: transparent;
+}
+
+.luxury-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.luxury-card {
+  background: var(--lux-surface);
+  padding: 3rem;
+  border: 1px solid #222;
+  transition: border-color 0.4s ease;
+}
+
+.luxury-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+.luxury-line {
+  width: 40px;
+  height: 2px;
+  background: var(--lux-gold);
+  margin-bottom: 2rem;
+}
+
+.luxury-card h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.luxury-card p {
+  font-family: var(--font-sans);
+  color: #888;
+  line-height: 1.6;
+  font-weight: 300;
+}
